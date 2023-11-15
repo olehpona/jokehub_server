@@ -16,4 +16,12 @@ model Jokes {
   type   String
   name   String
   body   String
+  likes  Int    @default(0)
+}
+
+model User {
+  id       String   @id @default(auto()) @map("_id") @db.ObjectId
+  email    String   @unique
+  password String
+  likes    String[]
 }
