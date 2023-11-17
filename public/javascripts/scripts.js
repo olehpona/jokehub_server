@@ -1970,7 +1970,7 @@ localStorage.getItem("token")
       "",
       "",
       function () {
-        localStorage.removeItem("token");
+        localStorage.removeItem("token"), location.reload();
       },
       async function (e) {
         localStorage.setItem("token", e.token), await ie(), await S();
