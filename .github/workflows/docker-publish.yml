@@ -1,4 +1,4 @@
-name: Docker Image CI
+bname: Docker Image CI
 
 on:
   push:
@@ -20,5 +20,5 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
     - name: Build Docker
       run: |
-             docker build . --tag ghcr.io/olehpona/:latest
-             docker push ghcr.io/olehpona/romashka:latest
+             docker build . --tag ghcr.io/olehpona/jokehub:latest
+             docker push ghcr.io/olehpona/jokehub:latest
