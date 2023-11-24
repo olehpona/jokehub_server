@@ -20,5 +20,5 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
     - name: Build Docker
       run: |
-             docker build . --tag ghcr.io/olehpona/jokehub:latest
+             docker buildx build . --tag ghcr.io/olehpona/jokehub:latest
              docker push ghcr.io/olehpona/jokehub:latest
